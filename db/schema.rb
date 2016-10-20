@@ -10,10 +10,51 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161020161943) do
+ActiveRecord::Schema.define(version: 20161020180800) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "categories", force: :cascade do |t|
+    t.string   "name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "drinks", force: :cascade do |t|
+    t.string   "name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "games", force: :cascade do |t|
+    t.integer  "user_id"
+    t.integer  "drink_id"
+    t.integer  "session",                null: false
+    t.integer  "correct?",   default: 0
+    t.datetime "created_at",             null: false
+    t.datetime "updated_at",             null: false
+    t.index ["drink_id"], name: "index_games_on_drink_id", using: :btree
+    t.index ["user_id"], name: "index_games_on_user_id", using: :btree
+  end
+
+  create_table "ingredients", force: :cascade do |t|
+    t.string   "name"
+    t.integer  "category_id"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+    t.index ["category_id"], name: "index_ingredients_on_category_id", using: :btree
+  end
+
+  create_table "mixed_drinks", force: :cascade do |t|
+    t.integer  "drink_id"
+    t.integer  "ingredient_id"
+    t.string   "name"
+    t.datetime "created_at",    null: false
+    t.datetime "updated_at",    null: false
+    t.index ["drink_id"], name: "index_mixed_drinks_on_drink_id", using: :btree
+    t.index ["ingredient_id"], name: "index_mixed_drinks_on_ingredient_id", using: :btree
+  end
 
   create_table "users", force: :cascade do |t|
     t.string   "email",                  default: "", null: false
@@ -32,4 +73,9 @@ ActiveRecord::Schema.define(version: 20161020161943) do
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true, using: :btree
   end
 
+  add_foreign_key "games", "drinks"
+  add_foreign_key "games", "users"
+  add_foreign_key "ingredients", "categories"
+  add_foreign_key "mixed_drinks", "drinks"
+  add_foreign_key "mixed_drinks", "ingredients"
 end
