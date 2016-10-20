@@ -15,12 +15,6 @@ ActiveRecord::Schema.define(version: 20161020180800) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-  create_table "categories", force: :cascade do |t|
-    t.string   "name"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
   create_table "drinks", force: :cascade do |t|
     t.string   "name"
     t.datetime "created_at", null: false
@@ -40,10 +34,8 @@ ActiveRecord::Schema.define(version: 20161020180800) do
 
   create_table "ingredients", force: :cascade do |t|
     t.string   "name"
-    t.integer  "category_id"
-    t.datetime "created_at",  null: false
-    t.datetime "updated_at",  null: false
-    t.index ["category_id"], name: "index_ingredients_on_category_id", using: :btree
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "mixed_drinks", force: :cascade do |t|
@@ -75,7 +67,6 @@ ActiveRecord::Schema.define(version: 20161020180800) do
 
   add_foreign_key "games", "drinks"
   add_foreign_key "games", "users"
-  add_foreign_key "ingredients", "categories"
   add_foreign_key "mixed_drinks", "drinks"
   add_foreign_key "mixed_drinks", "ingredients"
 end
