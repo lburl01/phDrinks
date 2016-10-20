@@ -59,3 +59,5 @@ Drink.new(name: 'Moscow Mule')
 Drink.new(name: 'Revolver')
 Drink.new(name: 'Tequila Sunrise')
 Drink.new(name: 'Harvey Wallbanger')
+
+# MixedDrink.new(name: , drink_id: , ingredient_id: )
