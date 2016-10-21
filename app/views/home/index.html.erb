@@ -2,3 +2,7 @@
   <%= user.email %>
   <% end %>
 </h1>
+
+<%= button_to "Update Account", edit_user_registration_path, method: :get %>
+
+<%= button_to "Log Out", destroy_user_session_path, method: :delete %>
