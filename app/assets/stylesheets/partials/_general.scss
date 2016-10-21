@@ -4,60 +4,104 @@
 .lato {
     font-family: 'Lato', sans-serif;
 }
+
 .raleway {
     font-family: 'Raleway', sans-serif;
 }
-
 $ember: #b92400;
 $vspace: 15px;
-$hspace: 10px;
-
-//Mixins
+$hspace: 10px; //Mixins
 @mixin center() {
-  left: 50%;
-  transform: translateX(-50%);
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 html {
-  background: image-url('dark_wood.png');
-  height: 100%;
+    background: image-url('dark_wood.png');
+    height: 100%;
 }
 
 body {
-  // background: image-url('wineCrate.svg');
-  background-size: cover;
-  height: 100%;
-  margin: 0;
-  font-family: raleway;
+    // background: image-url('wineCrate.svg');
+    background-size: cover;
+    height: 100%;
+    margin: 0;
+    font-family: raleway;
 }
+
 .container {
     width: 35%;
     position: absolute;
-    top:25%;
+    top: 25%;
     @include center();
 }
+
 .new_user {
-  padding: $vspace $hspace;
-  background: $ember;
-  border-radius: 5px;
+    padding: $vspace $hspace;
+    background: $ember;
+    border-radius: 5px;
 }
 
 h2 {
-  color: white;
+    color: white;
 }
+
 input {
+    // background: #ec2e00;
+    border: none;
+//     margin: 0;
+//     text-align: center;
+//     width: 100%;
+    outline: none;
+//     padding: 5px;
+//     transition: all 150ms linear;
 }
+.loginBtn {
+      // padding: 5px;
+      transition: all 150ms linear;
+      text-align: center;
+      width: 100%;
+      outline: none;
+      margin-top: 4px;
+      font-size: 15px;
+      font-family: raleway;
+      color: white;
+      background: $ember;
+      border-radius: 5px;
 
+      &:hover {
+        background: darken($ember, 10%);
+      }
+}
 .field {
+  margin: 10px;
+  padding: 5px;
 }
 
+a {
+    color: white;
+    text-decoration: none;
+
+    &:hover {
+        color: darken(white, 25%);
+    }
+}
+
+.checkbox {
+    margin-top: $vspace;
+}
 .actions {
+  // @extend input;
+  width: 100%;
+  height: 23px;
 }
- a {
-   color: white;
-   text-decoration: none;
+.formElem {
+    width: 100%;
+    outline: none;
+    border-bottom: 2px solid black;
+    width: 93%;
 
-   &:hover {
-     color: darken(white, 18%);
-   }
- }
+    label {
+        margin-right: $hspace;
+    }
+}
