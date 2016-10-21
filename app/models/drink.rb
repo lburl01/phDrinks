@@ -5,4 +5,9 @@ class Drink < ApplicationRecord
   has_many :games
   has_many :ingredients, through: :mixed_drinks
 
+  def self.get_random_drinks
+    # random_drinks = Drink.all.shuffle[0..4]
+    random_drinks = Drink.limit(5).order("RANDOM()")
+  end
+
 end

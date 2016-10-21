@@ -2,10 +2,6 @@ class GameController < ApplicationController
   respond_to :json, :html, :jpg
 
   def index
-  end
-
-  def new
-    @games = Game.all
-    respond_with(@games)
+    @five_random_drinks = Drink.get_random_drinks
   end
 end
