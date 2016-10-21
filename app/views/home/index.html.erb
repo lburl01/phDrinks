@@ -1,10 +1,16 @@
-<h1><%= @user.email %></h1>
+<h2>Logged in as: <%= @user.email %></h2>
 
-<h1><% @games.each do |game| %>
-  <%= game.drink_id %>
-  <% end %>
-</h1>
+<% if @user.games == [] %>
+  <h2>No Games! Get playing.</h2>
+ <% else %>
+  <h2><% @games.each do |game| %>
+    <p><%= game.created_at.strftime("%m/%d/%Y") %></p>
+    <% end %>
+  </h2>
+<% end %>
 
 <%= button_to "Update Account", edit_user_registration_path, method: :get %>
 
 <%= button_to "Log Out", destroy_user_session_path, method: :delete %>
+
+<%= button_to "Let's Play!", game_new_path, method: :get %>
