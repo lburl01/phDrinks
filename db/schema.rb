@@ -16,9 +16,9 @@ ActiveRecord::Schema.define(version: 20161020180800) do
   enable_extension "plpgsql"
 
   create_table "drinks", force: :cascade do |t|
-    t.string   "name"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.string   "name",       default: "", null: false
+    t.datetime "created_at",              null: false
+    t.datetime "updated_at",              null: false
   end
 
   create_table "games", force: :cascade do |t|
@@ -33,9 +33,9 @@ ActiveRecord::Schema.define(version: 20161020180800) do
   end
 
   create_table "ingredients", force: :cascade do |t|
-    t.string   "name"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.string   "name",       default: "", null: false
+    t.datetime "created_at",              null: false
+    t.datetime "updated_at",              null: false
   end
 
   create_table "mixed_drinks", force: :cascade do |t|
