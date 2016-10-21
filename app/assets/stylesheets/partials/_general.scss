@@ -1,0 +1,63 @@
+//Fonts
+@import url( 'https://fonts.googleapis.com/css?family=Lato|Raleway');
+
+.lato {
+    font-family: 'Lato', sans-serif;
+}
+.raleway {
+    font-family: 'Raleway', sans-serif;
+}
+
+$ember: #b92400;
+$vspace: 15px;
+$hspace: 10px;
+
+//Mixins
+@mixin center() {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+html {
+  background: image-url('dark_wood.png');
+  height: 100%;
+}
+
+body {
+  // background: image-url('wineCrate.svg');
+  background-size: cover;
+  height: 100%;
+  margin: 0;
+  font-family: raleway;
+}
+.container {
+    width: 35%;
+    position: absolute;
+    top:25%;
+    @include center();
+}
+.new_user {
+  padding: $vspace $hspace;
+  background: $ember;
+  border-radius: 5px;
+}
+
+h2 {
+  color: white;
+}
+input {
+}
+
+.field {
+}
+
+.actions {
+}
+ a {
+   color: white;
+   text-decoration: none;
+
+   &:hover {
+     color: darken(white, 18%);
+   }
+ }
