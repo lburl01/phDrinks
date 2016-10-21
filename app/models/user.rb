@@ -6,14 +6,4 @@ class User < ApplicationRecord
 
   has_many :games
 
-  # def self.has_games?
-  #   binding.pry
-  #   @user = User.find(current_user.id)
-  #   @game = Game.find(user_id: @user)
-  #   if @game.nil?
-  #     return false
-  #   else
-  #     return true
-  #   end
-  # end
 end
