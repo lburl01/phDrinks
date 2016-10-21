@@ -1,5 +1,4 @@
 class GameController < ApplicationController
-
   respond_to :json, :html, :jpg
 
   def index
