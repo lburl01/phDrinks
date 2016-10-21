@@ -1,8 +1,12 @@
 class GameController < ApplicationController
 
+  respond_to :json, :html, :jpg
+
   def index
-    # @games = Game.all_games(current_user)
-    # @unique_games = @games.map{ |game| game.session }
-    # redirect_to '/'
+  end
+
+  def new
+    @games = Game.all
+    respond_with(@games)
   end
 end
