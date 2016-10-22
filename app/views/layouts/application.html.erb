@@ -1,19 +1,22 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Ph.Drinks</title>
-    <%= csrf_meta_tags %>
-    <%= stylesheet_link_tag 'registrations' %>
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <!-- <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"> -->
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-  </head>
+    <head>
+        <title>Ph.Drinks</title>
+        <%= csrf_meta_tags %>
+        <%= stylesheet_link_tag 'registrations' %>
+        <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+        <!-- <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"> -->
+    </head>
 
-  <!-- <body>
+    <body>
+        <!-- <body>
     <div class="container">
       <p class="notice"><%= notice %></p>
       <p class="alert"><%= alert %></p>
     </div> -->
-    <%= yield %>
-  </body>
+        <%= yield %>
+        <!-- <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %> -->
+        <%= content_for :javascripts %>
+        
+    </body>
 </html>

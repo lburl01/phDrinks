@@ -1,4 +1,7 @@
-<body>
+<% content_for :javascripts do %>
+<%= javascript_include_tag 'devise', 'data-turbolinks-track': 'reload' %>
+<% end %>
+
   <div class="container">
     <p class="notice"><%= notice %></p>
     <p class="alert"><%= alert %></p>
@@ -32,5 +35,3 @@
 <% end %>
 
 <%= render "devise/shared/links" %>
-</body>
-</html>

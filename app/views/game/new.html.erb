@@ -1,11 +1,8 @@
 <!-- Styles for this page will begin with a class of game...example p.gameBtn, div.gameLogo -->
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <title>something</title>
-    </head>
-    <body>
+<% content_for :javascripts do %>
+<%= javascript_include_tag 'game', 'data-turbolinks-track': 'reload' %>
+<% end %>
+
         <header class="headerGrey">
             <div class="logoCup"></div>
             <h3 class="logoText">Ph.Drinks</h3>
@@ -13,7 +10,7 @@
         <section class="gameIngredients"></section>
         <!-- <section class="gameCountertop"> -->
         <div class="gameCup"></div>
-        <div class="gameDrinkName">Whiskey Sour</div>
+        <div class="gameDrinkName"></div>
         <!-- </section> -->
         <div class="gameWoodenBar"></div>
         <!-- <section class="gameIngredientsContainer">
@@ -53,6 +50,3 @@
                 <p>whiskey</p>
             </div>
         </section> -->
-
-    </body>
-</html>
