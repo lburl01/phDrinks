@@ -12,13 +12,17 @@ class MixedDrink < ApplicationRecord
       drink.id
     end
 
+    sorted_drinks = drinks.sort
+
     ingredients_obj = MixedDrink.select('drink_id, ingredient_id, drinks.name as drink_name').joins("INNER JOIN drinks on mixed_drinks.drink_id = drinks.id").where(drink_id: drinks).order(:drink_id)
 
     ingredients = ingredients_obj.map do |drink|
       drink.ingredient_id
     end
 
-    all = {'drinks' => drinks.sort, 'ingredients' => ingredients }
+    chunks = ingredients.each_slice(3).to_a
+
+    all = { sorted_drinks[0] => {'ingredients' => chunks[0]}, sorted_drinks[1] => {'ingredients' => chunks[1]} }
 
   end
 
