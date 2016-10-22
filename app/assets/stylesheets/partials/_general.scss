@@ -1,5 +1,6 @@
 //Fonts
 @import url( 'https://fonts.googleapis.com/css?family=Lato|Raleway');
+@import url( 'https://fonts.googleapis.com/css?family=Arizonia');
 
 .lato {
     font-family: 'Lato', sans-serif;
@@ -7,6 +8,10 @@
 
 .raleway {
     font-family: 'Raleway', sans-serif;
+}
+
+.arizonia {
+    font-family: 'Arizonia', serif;
 }
 $ember: #b92400;
 $vspace: 15px;
@@ -48,34 +53,34 @@ h2 {
 
 input {
     // background: #ec2e00;
-    border: none;
-//     margin: 0;
-//     text-align: center;
-//     width: 100%;
-    outline: none;
-//     padding: 5px;
-//     transition: all 150ms linear;
+    border: none; //     margin: 0;
+    //     text-align: center;
+    //     width: 100%;
+    outline: none; //     padding: 5px;
+    //     transition: all 150ms linear;
 }
-.loginBtn {
-      // padding: 5px;
-      transition: all 150ms linear;
-      text-align: center;
-      width: 100%;
-      outline: none;
-      margin-top: 4px;
-      font-size: 15px;
-      font-family: raleway;
-      color: white;
-      background: $ember;
-      border-radius: 5px;
 
-      &:hover {
+.loginBtn {
+    // padding: 5px;
+    transition: all 150ms linear;
+    text-align: center;
+    width: 100%;
+    outline: none;
+    margin-top: 4px;
+    font-size: 15px;
+    font-family: raleway;
+    color: white;
+    background: $ember;
+    border-radius: 5px;
+
+    &:hover {
         background: darken($ember, 10%);
-      }
+    }
 }
+
 .field {
-  margin: 10px;
-  padding: 5px;
+    margin: 10px;
+    padding: 5px;
 }
 
 a {
@@ -90,11 +95,13 @@ a {
 .checkbox {
     margin-top: $vspace;
 }
+
 .actions {
-  // @extend input;
-  width: 100%;
-  height: 23px;
+    // @extend input;
+    width: 100%;
+    height: 23px;
 }
+
 .formElem {
     width: 100%;
     outline: none;
@@ -105,3 +112,64 @@ a {
         margin-right: $hspace;
     }
 }
+/////////////
+//Game Page//
+/////////////
+
+.headerGrey {
+    // background: darken($ember, 10%);
+    background: linear-gradient(to top, rgba(185, 36, 0, 0), rgba(185, 36, 0, 1));
+    width: 100%;
+    position: absolute;
+    top: 0;
+    display: flex;
+
+    .logoCup {
+        content: url("glassCup.svg");
+        height: 50px;
+        margin: $vspace/2 $hspace/2 $vspace/2 1%;
+    }
+
+    .logoText {
+        color: white;
+        font-family: 'Arizonia';
+        font-weight: 100;
+        font-size: 40px;
+        margin: 0 0 0 1%;
+        align-self: center;
+        letter-spacing: 1px;
+    }
+}
+
+.gameWoodenBar {
+    content: image-url('woodenBar.jpg');
+    width: 100%;
+    bottom: 0;
+    height: 80px;
+    position: absolute;
+    filter: brightness(50%);
+}
+
+.gameCup {
+    content: image-url('glassCup.svg');
+    height: 230px;
+    position: absolute;
+    bottom: 10px;
+    right: 50px;
+    z-index: 1;
+    filter: drop-shadow(8px 12px 4px black);
+}
+
+.gameDrinkName {
+  display: flex;
+      position: absolute;
+      justify-content: center;
+      top: 68%;
+      width: 52%;
+      font-family: 'Lato';
+      font-size: 50px;
+      color: white;
+}
+/////////////////
+//Game Page End//
+/////////////////
