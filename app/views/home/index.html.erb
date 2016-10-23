@@ -2,11 +2,8 @@
 
 <% if @user.games == [] %>
   <h2>No Games! Get playing.</h2>
- <% else %>
-  <h2><% @games.each do |game| %>
-    <p><%= game.created_at.strftime("%m/%d/%Y") %></p>
-    <% end %>
-  </h2>
+<% else %>
+  <p><%= @hash %></p>
 <% end %>
 
 <%= button_to "Update Account", edit_user_registration_path, method: :get %>

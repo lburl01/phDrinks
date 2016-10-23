@@ -27,8 +27,5 @@ class GameController < ApplicationController
       session: params['session'],
       correct?: params['score']
     )
-    if @game.valid?
-      flash[:success] = "Yay!"
-    end
   end
 end

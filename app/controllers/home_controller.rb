@@ -3,14 +3,18 @@ class HomeController < ApplicationController
   before_action :authenticate_user!
 
   def index
-    # binding.pry
     @user = User.find(current_user.id)
-    @unique_games = Game.where(user_id: @user).uniq.pluck(:session)
-    @games = []
-    @unique_games.each do |session_id|
-      @games.push(Game.find_by(session: session_id))
-    end
-  end
+    @users_games = Game.where(user_id: @user)
 
+    @total_sessions = @users_games.maximum(:session)
+
+    @range = (1..@total_sessions)
+
+    @sessions_scores = {}
+    @range.each do |i|
+      @sessions_scores[i] = Game.where(user_id: @user).where(session: i).sum(:correct?)
+    end
+
+  end
 
 end
