@@ -1,0 +1,372 @@
+@import url("https://fonts.googleapis.com/css?family=Lato|Raleway");
+@import url("https://fonts.googleapis.com/css?family=Arizonia");
+/* line 5, /Users/samanthadavis/Documents/phDrinks/app/assets/stylesheets/partials/_general.scss */
+.lato {
+  font-family: 'Lato', sans-serif;
+}
+
+/* line 9, /Users/samanthadavis/Documents/phDrinks/app/assets/stylesheets/partials/_general.scss */
+.raleway {
+  font-family: 'Raleway', sans-serif;
+}
+
+/* line 13, /Users/samanthadavis/Documents/phDrinks/app/assets/stylesheets/partials/_general.scss */
+.arizonia {
+  font-family: 'Arizonia', serif;
+}
+
+/* line 24, /Users/samanthadavis/Documents/phDrinks/app/assets/stylesheets/partials/_general.scss */
+html {
+  background: url(/assets/dark_wood-02d5c1f6107be798ddb133245d35295ad193287661006783f445948b4fe20b53.png);
+  height: 100%;
+}
+
+/* line 29, /Users/samanthadavis/Documents/phDrinks/app/assets/stylesheets/partials/_general.scss */
+body {
+  background-size: cover;
+  height: 100%;
+  margin: 0;
+  font-family: raleway;
+}
+
+/* line 37, /Users/samanthadavis/Documents/phDrinks/app/assets/stylesheets/partials/_general.scss */
+.container {
+  width: 35%;
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* line 44, /Users/samanthadavis/Documents/phDrinks/app/assets/stylesheets/partials/_general.scss */
+.new_user {
+  padding: 15px 10px;
+  background: #b92400;
+  border-radius: 5px;
+}
+
+/* line 50, /Users/samanthadavis/Documents/phDrinks/app/assets/stylesheets/partials/_general.scss */
+h2 {
+  color: white;
+}
+
+/* line 54, /Users/samanthadavis/Documents/phDrinks/app/assets/stylesheets/partials/_general.scss */
+input {
+  border: none;
+  outline: none;
+}
+
+/* line 63, /Users/samanthadavis/Documents/phDrinks/app/assets/stylesheets/partials/_general.scss */
+.loginBtn {
+  transition: all 150ms linear;
+  text-align: center;
+  width: 100%;
+  outline: none;
+  margin-top: 4px;
+  font-size: 15px;
+  font-family: raleway;
+  color: white;
+  background: #b92400;
+  border-radius: 5px;
+}
+/* line 76, /Users/samanthadavis/Documents/phDrinks/app/assets/stylesheets/partials/_general.scss */
+.loginBtn:hover {
+  background: #861a00;
+}
+
+/* line 81, /Users/samanthadavis/Documents/phDrinks/app/assets/stylesheets/partials/_general.scss */
+.field {
+  margin: 10px;
+  padding: 5px;
+}
+
+/* line 86, /Users/samanthadavis/Documents/phDrinks/app/assets/stylesheets/partials/_general.scss */
+a {
+  color: white;
+  text-decoration: none;
+}
+/* line 90, /Users/samanthadavis/Documents/phDrinks/app/assets/stylesheets/partials/_general.scss */
+a:hover {
+  color: #bfbfbf;
+}
+
+/* line 95, /Users/samanthadavis/Documents/phDrinks/app/assets/stylesheets/partials/_general.scss */
+.checkbox {
+  margin-top: 15px;
+}
+
+/* line 99, /Users/samanthadavis/Documents/phDrinks/app/assets/stylesheets/partials/_general.scss */
+.actions {
+  width: 100%;
+  height: 23px;
+}
+
+/* line 105, /Users/samanthadavis/Documents/phDrinks/app/assets/stylesheets/partials/_general.scss */
+.formElem {
+  width: 100%;
+  outline: none;
+  border-bottom: 2px solid black;
+  width: 93%;
+}
+/* line 111, /Users/samanthadavis/Documents/phDrinks/app/assets/stylesheets/partials/_general.scss */
+.formElem label {
+  margin-right: 10px;
+}
+
+/* line 119, /Users/samanthadavis/Documents/phDrinks/app/assets/stylesheets/partials/_general.scss */
+.headerGrey {
+  background: linear-gradient(to top, rgba(185, 36, 0, 0), #b92400);
+  width: 100%;
+  position: absolute;
+  top: 0;
+  display: flex;
+}
+/* line 127, /Users/samanthadavis/Documents/phDrinks/app/assets/stylesheets/partials/_general.scss */
+.headerGrey .logoCup {
+  content: url("glassCup.svg");
+  height: 50px;
+  margin: 7.5px 5px 7.5px 1%;
+}
+/* line 133, /Users/samanthadavis/Documents/phDrinks/app/assets/stylesheets/partials/_general.scss */
+.headerGrey .logoText {
+  color: white;
+  font-family: 'Arizonia';
+  font-weight: 100;
+  font-size: 40px;
+  margin: 0 0 0 1%;
+  align-self: center;
+  letter-spacing: 1px;
+}
+
+/* line 144, /Users/samanthadavis/Documents/phDrinks/app/assets/stylesheets/partials/_general.scss */
+.gameWoodenBar {
+  content: url(/assets/woodenBar-cce4c5ac6336547d9cfa9094221b0c3561207218a7975edcf07bc705247ab4d0.jpg);
+  width: 100%;
+  bottom: 0;
+  height: 80px;
+  position: absolute;
+  filter: brightness(50%);
+}
+
+/* line 153, /Users/samanthadavis/Documents/phDrinks/app/assets/stylesheets/partials/_general.scss */
+.gameCup {
+  content: url(/assets/glassCup-489d6572fc38ece2d0a280a83cd43a9ce497ed65a492374c1ec3dc1047a64c5c.svg);
+  height: 230px;
+  position: absolute;
+  bottom: 10px;
+  right: 50px;
+  z-index: 1;
+  filter: drop-shadow(8px 12px 4px black);
+}
+
+/* line 163, /Users/samanthadavis/Documents/phDrinks/app/assets/stylesheets/partials/_general.scss */
+.gameDrinkName {
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  top: 68%;
+  width: 52%;
+  font-family: 'Lato';
+  font-size: 50px;
+  color: white;
+}
+
+/* line 174, /Users/samanthadavis/Documents/phDrinks/app/assets/stylesheets/partials/_general.scss */
+.inactive {
+  background: gray;
+  color: gray;
+}
+@import url("https://fonts.googleapis.com/css?family=Lato|Raleway");
+@import url("https://fonts.googleapis.com/css?family=Arizonia");
+/* line 5, /Users/samanthadavis/Documents/phDrinks/app/assets/stylesheets/partials/_general.scss */
+.lato {
+  font-family: 'Lato', sans-serif;
+}
+
+/* line 9, /Users/samanthadavis/Documents/phDrinks/app/assets/stylesheets/partials/_general.scss */
+.raleway {
+  font-family: 'Raleway', sans-serif;
+}
+
+/* line 13, /Users/samanthadavis/Documents/phDrinks/app/assets/stylesheets/partials/_general.scss */
+.arizonia {
+  font-family: 'Arizonia', serif;
+}
+
+/* line 24, /Users/samanthadavis/Documents/phDrinks/app/assets/stylesheets/partials/_general.scss */
+html {
+  background: url(/assets/dark_wood-02d5c1f6107be798ddb133245d35295ad193287661006783f445948b4fe20b53.png);
+  height: 100%;
+}
+
+/* line 29, /Users/samanthadavis/Documents/phDrinks/app/assets/stylesheets/partials/_general.scss */
+body {
+  background-size: cover;
+  height: 100%;
+  margin: 0;
+  font-family: raleway;
+}
+
+/* line 37, /Users/samanthadavis/Documents/phDrinks/app/assets/stylesheets/partials/_general.scss */
+.container {
+  width: 35%;
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* line 44, /Users/samanthadavis/Documents/phDrinks/app/assets/stylesheets/partials/_general.scss */
+.new_user {
+  padding: 15px 10px;
+  background: #b92400;
+  border-radius: 5px;
+}
+
+/* line 50, /Users/samanthadavis/Documents/phDrinks/app/assets/stylesheets/partials/_general.scss */
+h2 {
+  color: white;
+}
+
+/* line 54, /Users/samanthadavis/Documents/phDrinks/app/assets/stylesheets/partials/_general.scss */
+input {
+  border: none;
+  outline: none;
+}
+
+/* line 63, /Users/samanthadavis/Documents/phDrinks/app/assets/stylesheets/partials/_general.scss */
+.loginBtn {
+  transition: all 150ms linear;
+  text-align: center;
+  width: 100%;
+  outline: none;
+  margin-top: 4px;
+  font-size: 15px;
+  font-family: raleway;
+  color: white;
+  background: #b92400;
+  border-radius: 5px;
+}
+/* line 76, /Users/samanthadavis/Documents/phDrinks/app/assets/stylesheets/partials/_general.scss */
+.loginBtn:hover {
+  background: #861a00;
+}
+
+/* line 81, /Users/samanthadavis/Documents/phDrinks/app/assets/stylesheets/partials/_general.scss */
+.field {
+  margin: 10px;
+  padding: 5px;
+}
+
+/* line 86, /Users/samanthadavis/Documents/phDrinks/app/assets/stylesheets/partials/_general.scss */
+a {
+  color: white;
+  text-decoration: none;
+}
+/* line 90, /Users/samanthadavis/Documents/phDrinks/app/assets/stylesheets/partials/_general.scss */
+a:hover {
+  color: #bfbfbf;
+}
+
+/* line 95, /Users/samanthadavis/Documents/phDrinks/app/assets/stylesheets/partials/_general.scss */
+.checkbox {
+  margin-top: 15px;
+}
+
+/* line 99, /Users/samanthadavis/Documents/phDrinks/app/assets/stylesheets/partials/_general.scss */
+.actions {
+  width: 100%;
+  height: 23px;
+}
+
+/* line 105, /Users/samanthadavis/Documents/phDrinks/app/assets/stylesheets/partials/_general.scss */
+.formElem {
+  width: 100%;
+  outline: none;
+  border-bottom: 2px solid black;
+  width: 93%;
+}
+/* line 111, /Users/samanthadavis/Documents/phDrinks/app/assets/stylesheets/partials/_general.scss */
+.formElem label {
+  margin-right: 10px;
+}
+
+/* line 119, /Users/samanthadavis/Documents/phDrinks/app/assets/stylesheets/partials/_general.scss */
+.headerGrey {
+  background: linear-gradient(to top, rgba(185, 36, 0, 0), #b92400);
+  width: 100%;
+  position: absolute;
+  top: 0;
+  display: flex;
+}
+/* line 127, /Users/samanthadavis/Documents/phDrinks/app/assets/stylesheets/partials/_general.scss */
+.headerGrey .logoCup {
+  content: url("glassCup.svg");
+  height: 50px;
+  margin: 7.5px 5px 7.5px 1%;
+}
+/* line 133, /Users/samanthadavis/Documents/phDrinks/app/assets/stylesheets/partials/_general.scss */
+.headerGrey .logoText {
+  color: white;
+  font-family: 'Arizonia';
+  font-weight: 100;
+  font-size: 40px;
+  margin: 0 0 0 1%;
+  align-self: center;
+  letter-spacing: 1px;
+}
+
+/* line 144, /Users/samanthadavis/Documents/phDrinks/app/assets/stylesheets/partials/_general.scss */
+.gameWoodenBar {
+  content: url(/assets/woodenBar-cce4c5ac6336547d9cfa9094221b0c3561207218a7975edcf07bc705247ab4d0.jpg);
+  width: 100%;
+  bottom: 0;
+  height: 80px;
+  position: absolute;
+  filter: brightness(50%);
+}
+
+/* line 153, /Users/samanthadavis/Documents/phDrinks/app/assets/stylesheets/partials/_general.scss */
+.gameCup {
+  content: url(/assets/glassCup-489d6572fc38ece2d0a280a83cd43a9ce497ed65a492374c1ec3dc1047a64c5c.svg);
+  height: 230px;
+  position: absolute;
+  bottom: 10px;
+  right: 50px;
+  z-index: 1;
+  filter: drop-shadow(8px 12px 4px black);
+}
+
+/* line 163, /Users/samanthadavis/Documents/phDrinks/app/assets/stylesheets/partials/_general.scss */
+.gameDrinkName {
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  top: 68%;
+  width: 52%;
+  font-family: 'Lato';
+  font-size: 50px;
+  color: white;
+}
+
+/* line 174, /Users/samanthadavis/Documents/phDrinks/app/assets/stylesheets/partials/_general.scss */
+.inactive {
+  background: gray;
+  color: gray;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+
+ */
+

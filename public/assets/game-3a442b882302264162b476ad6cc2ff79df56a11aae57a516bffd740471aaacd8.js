@@ -1,16 +1,13 @@
-
-console.log('in');
 getGame = function(turnNum) {
     // 1. get drinks object and ingredients object
-console.log();
-    // $.get('', function(response) {
-    //   console.log(response);
-    //     initTurn(response, turnNum);
-    // });
+    $.get('game#new', function(response) {
+      console.log(response);
+        // initTurn(response, turnNum);
+    });
 };
 
-// 2. to begin game, save drink name, id and ingredients and pass into FIRST turn.
-// This function grabs the first drink in the game and passes it into turn function.
+// // 2. to begin game, save drink name, id and ingredients and pass into FIRST turn.
+// // This function grabs the first drink in the game and passes it into turn function.
 // initTurn = function(response, turnNum) {
 //   console.log(turnNum);
 //         var drinkName = response.drinks[turnNum].name;
