@@ -1,5 +1,7 @@
 class GameController < ApplicationController
   respond_to :json, :html
+  skip_before_action :verify_authenticity_token, only: [:create]
+
 
   def new
     respond_with(@drinks_data = MixedDrink.get_random_drink_info)
@@ -25,5 +27,11 @@ class GameController < ApplicationController
       session: params['session'],
       correct?: params['score']
     )
+  end
+
+  private
+
+  def game_params
+    params.require(:game).permit(:session, :user_id, :drink_id, :correct?)
   end
 end
