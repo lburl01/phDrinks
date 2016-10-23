@@ -10,4 +10,6 @@ Rails.application.routes.draw do
 
   put '/game/:id' => 'game#update'
 
+  get '/game/new/session' => 'game#send_session'
+
 end

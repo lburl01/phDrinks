@@ -1,0 +1,13 @@
+<% content_for :javascripts do %>
+<%= javascript_include_tag 'game' %>
+<% end %>
+
+<h2>Current session: <%= @session %></h2>
+<h2>Drink ID: <%= @game.drink_id %></h2>
+<h2>Session #<%= @game.session %></h2>
+<h2>Correct? <%= @game.correct? %></h2>
+<h2>Game ID: <%= @game.id %></h2>
+<h2>User ID: <%= @game.user_id %></h2>
+
+
+<%= javascript_include_tag "jquery-3.1.1.min.js" %>
