@@ -7,11 +7,11 @@ class GameController < ApplicationController
 
   def show
     @game = Game.find(params[:id])
-    render '/game/new'
   end
 
   def update
     @game = Game.find(params[:id])
-    # @game.update(correct?: params[:score])
+    @game.update(correct?: params[:score])
+    render 'game/new'
   end
 end
