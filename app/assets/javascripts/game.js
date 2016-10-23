@@ -90,7 +90,6 @@ callNextTurn = function(sessionNum, turnNum, drinkId, score) {
   });
 
   getGame(turnNum, sessionNum);
-  console.log(gameScore);
   $('button').removeClass('inactive');
   $('button').addClass('active');
   if(turnNum===5) {

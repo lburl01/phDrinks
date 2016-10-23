@@ -28,10 +28,4 @@ class GameController < ApplicationController
       correct?: params['score']
     )
   end
-
-  private
-
-  def game_params
-    params.require(:game).permit(:session, :user_id, :drink_id, :correct?)
-  end
 end
