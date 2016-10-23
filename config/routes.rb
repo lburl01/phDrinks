@@ -6,4 +6,6 @@ Rails.application.routes.draw do
 
   get 'game/new'
 
+  get 'game/show'
+
 end
