@@ -1,3 +1,4 @@
+var gameScore = [];
 
 getGame = function(turnNum) {
     // 1. get drinks object and ingredients object
@@ -20,7 +21,7 @@ turn = function(drinkName, drinkId, drinkIngredients, turnNum) {
   // creates an array that stores picked ingredients for each drink
   var ingredientsArray = [];
   displayDrinkName(drinkName);
-  logIngredients(ingredientsArray, drinkIngredients, turnNum);
+  logIngredients(ingredientsArray, drinkId, drinkIngredients, turnNum);
 };
 
 // 4. Display drinkName to the game page
@@ -29,25 +30,24 @@ displayDrinkName = function(drinkName) {
 };
 
 // 5. logIngredients assigns click event to each button, activating inactive class and removing active class
-logIngredients = function(ingredientsArray, drinkIngredients, turnNum) {
+logIngredients = function(ingredientsArray, drinkId, drinkIngredients, turnNum) {
   $('body').on('click', '.active', function(event) {
     $(this).addClass('inactive').removeClass('active');
     ingredientsArray.push($(this).val());
     // if 3 ingredients have been selected, deactivate all ingredients to prevent adding any more to the array.
     if (ingredientsArray.length===3) {
       $('button').addClass('inactive').removeClass('active');
-      checkAnswer(ingredientsArray, drinkIngredients, turnNum);
+      checkAnswer(drinkId, ingredientsArray, drinkIngredients, turnNum);
     }
     $('button').off('click');
   });
 };
 
 // 7. checkAnswer function compares ingredientsArray to drinkIngredients key
-checkAnswer = function(ingredientsArray, drinkIngredients, turnNum) {
-  // var drinkArray = [];
-  // for (count=0; count<drinkIngredients.length; count++) {
-  //   drinkArray.push(drinkIngredients[count].id);
-  // }
+checkAnswer = function(drinkId, ingredientsArray, drinkIngredients, turnNum) {
+    var correct = 1;
+    var incorrect = 0;
+
     var sortedIngredientsArray = (ingredientsArray.sort().join(','));
     var sortedDrinkIngredients = (drinkIngredients.sort().join(','));
     console.log(sortedIngredientsArray);
@@ -55,23 +55,26 @@ checkAnswer = function(ingredientsArray, drinkIngredients, turnNum) {
 
     if (sortedIngredientsArray === sortedDrinkIngredients) {
       console.log('You win!');
-      // pass 1
+      turnNum++;
+      callNextTurn(turnNum, drinkId, correct);
     } else {
       console.log("you lose!");
-      // pass 0
+      turnNum++;
+      callNextTurn(turnNum, drinkId, incorrect);
     }
     // pass correct/incorrect to array to save.
-    turnNum++;
-    callNextTurn(turnNum);
 };
 
 // 8. call next turn, if there have been 3 turns end game
-callNextTurn = function(turnNum) {
+callNextTurn = function(turnNum, drinkId, score) {
+  var turnScore = [drinkId, score];
+  gameScore.push(turnScore);
   getGame(turnNum);
   $('button').removeClass('inactive');
   $('button').addClass('active');
-  if(turnNum===3) {
+  if(turnNum===5) {
     alert('Game Over!');
+    console.log(gameScore);
   }
 };
 
