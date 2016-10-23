@@ -30,6 +30,8 @@ class MixedDrink < ApplicationRecord
 
     all = { sorted_drinks[0] => {'name' => drink_names[0], 'ingredients' => ingredient_groups[0]}, sorted_drinks[1] => {'name' => drink_names[1], 'ingredients' => ingredient_groups[1]}, sorted_drinks[2] => {'name' => drink_names[2], 'ingredients' => ingredient_groups[2]}, sorted_drinks[3] => {'name' => drink_names[3], 'ingredients' => ingredient_groups[3]}, sorted_drinks[4] => {'name' => drink_names[4], 'ingredients' => ingredient_groups[4]} }
 
+    all.to_json
+
   end
 
 end
