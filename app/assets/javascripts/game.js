@@ -58,15 +58,11 @@ checkAnswer = function(drinkId, ingredientsArray, drinkIngredients, turnNum, ses
 
     var sortedIngredientsArray = (ingredientsArray.sort().join(','));
     var sortedDrinkIngredients = (drinkIngredients.sort().join(','));
-    console.log(sortedIngredientsArray);
-    console.log(sortedDrinkIngredients);
 
     if (sortedIngredientsArray === sortedDrinkIngredients) {
-      console.log('You win!');
       turnNum++;
       callNextTurn(sessionNum, turnNum, drinkId, correct);
     } else {
-      console.log("you lose!");
       turnNum++;
       callNextTurn(sessionNum, turnNum, drinkId, incorrect);
     }
@@ -78,10 +74,9 @@ callNextTurn = function(sessionNum, turnNum, drinkId, score) {
 
   var turnScore = {
     drink_id: drinkId,
-    session_num: sessionNum,
+    session: sessionNum,
     score: score
   };
-  console.log(turnScore);
   gameScore.push(turnScore);
 
   $.ajax({
@@ -95,10 +90,15 @@ callNextTurn = function(sessionNum, turnNum, drinkId, score) {
   });
 
   getGame(turnNum, sessionNum);
+  console.log(gameScore);
   $('button').removeClass('inactive');
   $('button').addClass('active');
   if(turnNum===5) {
-    console.log('Game Over!');
+    console.log(gameScore);
+    $('.gameBanner').fadeIn('slow', function() {
+      $('.gameBanner').children('p').addClass('rollIn');
+    });
+    $('.gameBanner').html('<p>Game Over!<br><span> % correct</span></p>');
   }
 };
 
