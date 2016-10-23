@@ -1,7 +1,11 @@
 class GameController < ApplicationController
-  respond_to :json, :html, :jpg
+  respond_to :json, :html
 
   def new
-    @drinks_data = MixedDrink.get_random_drink_info
+
+  end
+
+  def show
+    respond_with(@drinks_data = MixedDrink.get_random_drink_info)
   end
 end
