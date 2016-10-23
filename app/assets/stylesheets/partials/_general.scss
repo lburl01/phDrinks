@@ -14,8 +14,11 @@
     font-family: 'Arizonia', serif;
 }
 $ember: #b92400;
+$ink: #062f4f;
 $vspace: 15px;
-$hspace: 10px; //Mixins
+$hspace: 10px;
+
+//Mixins
 @mixin center() {
     left: 50%;
     transform: translateX(-50%);
@@ -52,16 +55,11 @@ h2 {
 }
 
 input {
-    // background: #ec2e00;
-    border: none; //     margin: 0;
-    //     text-align: center;
-    //     width: 100%;
-    outline: none; //     padding: 5px;
-    //     transition: all 150ms linear;
+    border: none;
+    outline: none;
 }
 
 .loginBtn {
-    // padding: 5px;
     transition: all 150ms linear;
     text-align: center;
     width: 100%;
@@ -174,6 +172,23 @@ a {
 .inactive {
   background: gray;
   color: gray;
+}
+
+.gameIngredients {
+  margin-top: 10%;
+}
+
+button {
+  width: 100px;
+  height: 50px;
+  background: $ink;
+  color: white;
+  border: none;
+  outline:none;
+}
+button:hover {
+  color: black;
+  background: red;
 }
 
 /////////////////

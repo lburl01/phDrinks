@@ -28,9 +28,12 @@ class MixedDrink < ApplicationRecord
 
     ingredient_groups = ingredients.each_slice(3).to_a
 
-    all = { sorted_drinks[0] => {'name' => drink_names[0], 'ingredients' => ingredient_groups[0]}, sorted_drinks[1] => {'name' => drink_names[1], 'ingredients' => ingredient_groups[1]}, sorted_drinks[2] => {'name' => drink_names[2], 'ingredients' => ingredient_groups[2]}, sorted_drinks[3] => {'name' => drink_names[3], 'ingredients' => ingredient_groups[3]}, sorted_drinks[4] => {'name' => drink_names[4], 'ingredients' => ingredient_groups[4]} }
-
-    all.to_json
+    all = { 'drinks' => [
+      { 'id' => sorted_drinks[0], 'name' => drink_names[0], 'ingredients' => ingredient_groups[0]},
+      { 'id' => sorted_drinks[1], 'name' => drink_names[1], 'ingredients' => ingredient_groups[1]},
+      { 'id' => sorted_drinks[2], 'name' => drink_names[2], 'ingredients' => ingredient_groups[2]},
+      { 'id' => sorted_drinks[3], 'name' => drink_names[3], 'ingredients' => ingredient_groups[3]},
+      { 'id' => sorted_drinks[4], 'name' => drink_names[4], 'ingredients' => ingredient_groups[4]} ]}
 
   end
 
