@@ -78,7 +78,7 @@ callNextTurn = function(sessionNum, turnNum, drinkId, score) {
 
   var turnScore = {
     drink_id: drinkId,
-    session_num: sessionNum,
+    session: sessionNum,
     score: score
   };
   console.log(turnScore);
