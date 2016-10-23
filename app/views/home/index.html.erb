@@ -3,7 +3,10 @@
 <% if @user.games == [] %>
   <h2>No Games! Get playing.</h2>
 <% else %>
-  <p><%= @hash %></p>
+    <% @sessions_scores.each {|session, total_score| %>
+    <p>Session Number: <%= session %> | Total Score: <%= total_score %>
+    <% } %>
+  </p>
 <% end %>
 
 <%= button_to "Update Account", edit_user_registration_path, method: :get %>
