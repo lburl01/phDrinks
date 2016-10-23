@@ -34,6 +34,7 @@ class MixedDrink < ApplicationRecord
       { 'id' => sorted_drinks[2], 'name' => drink_names[2], 'ingredients' => ingredient_groups[2]},
       { 'id' => sorted_drinks[3], 'name' => drink_names[3], 'ingredients' => ingredient_groups[3]},
       { 'id' => sorted_drinks[4], 'name' => drink_names[4], 'ingredients' => ingredient_groups[4]} ]}
+
   end
 
 end
