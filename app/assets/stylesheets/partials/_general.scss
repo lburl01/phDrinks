@@ -36,28 +36,28 @@ body {
     font-family: raleway;
 }
 
-li,
-p,
-ul,
+em,
+h3,
 i,
 label,
-h3,
-em {
+li,
+p,
+ul {
     color: white;
 }
 
 .page-wrap {
-  width: 70%;
-  margin: 5% 15%;
+    width: 70%;
+    margin: 5% 15%;
 }
 
 input[type=submit] {
-  color: white;
-  margin: 5px 0;
-  padding: 5px 10px;
-  font-size: 1em;
-  border-radius: 5px;
-  background-color: #B92400;
+    color: white;
+    margin: 5px 0;
+    padding: 5px 10px;
+    font-size: 1em;
+    border-radius: 5px;
+    background-color: #B92400;
 }
 
 .container {
@@ -123,17 +123,17 @@ a {
 }
 
 input[type=email] {
-  padding: 5px;
-  margin: 5px;
-  font-size: 1em;
-  width: 80%;
+    padding: 5px;
+    margin: 5px;
+    font-size: 1em;
+    width: 80%;
 }
 
 input[type=password] {
-  padding: 5px;
-  margin: 5px;
-  font-size: 1em;
-  width: 72%;
+    padding: 5px;
+    margin: 5px;
+    font-size: 1em;
+    width: 72%;
 }
 
 .formElem {
@@ -192,6 +192,7 @@ input[type=password] {
     right: 50px;
     z-index: 1;
     filter: drop-shadow(8px 12px 4px black);
+    overflow: hidden;
 }
 
 .gameDrinkName {
@@ -241,34 +242,43 @@ button:hover {
         text-align: center;
         color: white;
         font-family: arizonia;
-        font-size: 50px;
+        font-size: 55px;
         line-height: 1;
     }
 
     span {
-      font-family: raleway;
-      font-size: 20px;
-      line-height: 1;
+        font-family: raleway;
+        font-size: 20px;
+        line-height: 1;
     }
 }
 
 .rollIn {
-  animation: grow .5s ease;
+    animation: grow 0.5s ease;
 }
-
-
 @keyframes grow {
     0% {
         transform: scale(1);
     }
+
     50% {
-        transform: scale(.01)
+        transform: scale(.01);
     }
+
     100% {
         transform: scale(1);
     }
 }
 
+.cupFill {
+    position: absolute;
+    right: 72px;
+    top: 84vh;
+    height: 90px;
+    width: 150px;
+    background: rgba(brown, .5);
+    transition: all 1s ease;
+}
 /////////////////
 //Game Page End//
 /////////////////
