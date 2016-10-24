@@ -113,7 +113,7 @@ calculateScore = function(gameScore) {
     }
   }
 
-  $('.gameBanner').html('<p>Game Over!<br><span>'+ score + ' out of 5 correct</span></p>');
+  $('.button_to:nth-child(1)').prepend('<p>Game Over!<br><span>'+ score + ' out of 5 correct</span></p>');
 };
 
 getSession();
