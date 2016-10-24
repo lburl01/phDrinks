@@ -94,13 +94,27 @@ callNextTurn = function(response, sessionNum, turnNum, drinkId, score) {
   turnNum++;
 
   if(turnNum===5) {
+    $('.cupFill').css('top', '84vh');
     $('.gameBanner').fadeIn('slow', function() {
       $('.gameBanner').children('p').addClass('rollIn');
       calculateScore(gameScore);
     });
-  } else {
+  } else if (turnNum===1){
+    $('.cupFill').css('top', '77vh');
+    $('.cupFill').css('right', '74px');
     initTurn(response, turnNum, sessionNum);
-  }
+  } else if (turnNum===2){
+    $('.cupFill').css('top', '74vh');
+    initTurn(response, turnNum, sessionNum);
+  } else if (turnNum===3){
+    $('.cupFill').css('top', '72vh');
+    initTurn(response, turnNum, sessionNum);
+  } else if (turnNum===4){
+    $('.cupFill').css('top', '70vh');
+    $('.cupFill').css('right', '67px');
+    $('.cupFill').css('width', '158px');
+    initTurn(response, turnNum, sessionNum);
+}
 };
 
 calculateScore = function(gameScore) {
