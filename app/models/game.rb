@@ -13,4 +13,24 @@ class Game < ApplicationRecord
     end
     return @session
   end
+
+  def self.get_leaders
+    @games = Game.all
+
+    @all_users = []
+    @users = @games.each do |game|
+      @all_users << game.user_id
+    end
+
+    @each_user = @all_users.uniq
+
+    @leaders_scores = {}
+    @each_user.each do |user|
+      total_score = Game.where(user_id: user).sum(:correct?)
+      @leaders_scores[user] = total_score
+    end
+
+    return @leaders_scores.sort_by{ |user, total| total }.reverse
+
+  end
 end

@@ -1,0 +1,6 @@
+<%= button_to "Back to User Homepage", root_path, method: :get %>
+
+<% @leaders.each { |user, total| %>
+  <p>User: <%= user %> | Total Points: <%= total %>
+    <% } %>
+  </p>

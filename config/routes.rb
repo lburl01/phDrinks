@@ -14,4 +14,6 @@ Rails.application.routes.draw do
 
   get '/game/new/session' => 'game#send_session'
 
+  get '/leaderboard' => 'leaderboard#index'
+
 end

@@ -4,7 +4,7 @@
   <h2>No Games! Get playing.</h2>
 <% else %>
     <% @sessions_scores.each {|session, total_score| %>
-    <p>Session Number: <%= session %> | Total Score: <%= total_score %>
+    <p>Game Number: <%= session %> | Total Score: <%= total_score %>
     <% } %>
   </p>
 <% end %>
@@ -14,3 +14,5 @@
 <%= button_to "Log Out", destroy_user_session_path, method: :delete %>
 
 <%= button_to "Let's Play!", game_new_path, method: :get %>
+
+<%= button_to "Leaderboard", leaderboard_path, method: :get %>
