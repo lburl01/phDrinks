@@ -1,6 +1,6 @@
 <h2>Logged in as: <%= @user.email %></h2>
 
-<% if @user.games == [] %>
+<% if @total_sessions.nil? %>
   <h2>No Games! Get playing.</h2>
 <% else %>
     <% @sessions_scores.each {|session, total_score| %>

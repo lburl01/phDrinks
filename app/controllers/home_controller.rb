@@ -8,11 +8,13 @@ class HomeController < ApplicationController
 
     @total_sessions = @users_games.maximum(:session)
 
-    @range = (1..@total_sessions)
+    if !@total_sessions.nil?
+      @range = (1..@total_sessions)
 
-    @sessions_scores = {}
-    @range.each do |i|
-      @sessions_scores[i] = Game.where(user_id: @user).where(session: i).sum(:correct?)
+      @sessions_scores = {}
+      @range.each do |i|
+        @sessions_scores[i] = Game.where(user_id: @user).where(session: i).sum(:correct?)
+      end
     end
 
   end
