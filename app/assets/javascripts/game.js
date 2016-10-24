@@ -60,9 +60,11 @@ checkAnswer = function(drinkId, ingredientsArray, drinkIngredients, turnNum, ses
     var sortedDrinkIngredients = (drinkIngredients.sort().join(','));
 
     if (sortedIngredientsArray === sortedDrinkIngredients) {
+      console.log('you won!');
       turnNum++;
       callNextTurn(sessionNum, turnNum, drinkId, correct);
     } else {
+      console.log('you lost, loser');
       turnNum++;
       callNextTurn(sessionNum, turnNum, drinkId, incorrect);
     }
