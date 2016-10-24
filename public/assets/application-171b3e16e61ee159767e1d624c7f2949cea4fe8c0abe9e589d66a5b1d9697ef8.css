@@ -1,0 +1,609 @@
+@import url("https://fonts.googleapis.com/css?family=Lato|Raleway");
+@import url("https://fonts.googleapis.com/css?family=Arizonia");
+/* line 5, /Users/loriburleson/Desktop/TIY16/Week6/phdrinks/app/assets/stylesheets/partials/_general.scss */
+.lato {
+  font-family: 'Lato', sans-serif;
+}
+
+/* line 9, /Users/loriburleson/Desktop/TIY16/Week6/phdrinks/app/assets/stylesheets/partials/_general.scss */
+.raleway {
+  font-family: 'Raleway', sans-serif;
+}
+
+/* line 13, /Users/loriburleson/Desktop/TIY16/Week6/phdrinks/app/assets/stylesheets/partials/_general.scss */
+.arizonia {
+  font-family: 'Arizonia', serif;
+}
+
+/* line 26, /Users/loriburleson/Desktop/TIY16/Week6/phdrinks/app/assets/stylesheets/partials/_general.scss */
+html {
+  background: url(/assets/dark_wood-02d5c1f6107be798ddb133245d35295ad193287661006783f445948b4fe20b53.png);
+  height: 100%;
+}
+
+/* line 31, /Users/loriburleson/Desktop/TIY16/Week6/phdrinks/app/assets/stylesheets/partials/_general.scss */
+body {
+  background-size: cover;
+  height: 100%;
+  margin: 0;
+  font-family: raleway;
+}
+
+/* line 39, /Users/loriburleson/Desktop/TIY16/Week6/phdrinks/app/assets/stylesheets/partials/_general.scss */
+em,
+h3,
+i,
+label,
+li,
+p,
+ul {
+  color: white;
+}
+
+/* line 49, /Users/loriburleson/Desktop/TIY16/Week6/phdrinks/app/assets/stylesheets/partials/_general.scss */
+.page-wrap {
+  width: 70%;
+  margin: 5% 15%;
+}
+
+/* line 54, /Users/loriburleson/Desktop/TIY16/Week6/phdrinks/app/assets/stylesheets/partials/_general.scss */
+input[type=submit] {
+  color: white;
+  margin: 5px 0;
+  padding: 5px 10px;
+  font-size: 1em;
+  border-radius: 5px;
+  background-color: #B92400;
+}
+
+/* line 63, /Users/loriburleson/Desktop/TIY16/Week6/phdrinks/app/assets/stylesheets/partials/_general.scss */
+.container {
+  width: 35%;
+  top: 25%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* line 69, /Users/loriburleson/Desktop/TIY16/Week6/phdrinks/app/assets/stylesheets/partials/_general.scss */
+.new_user {
+  padding: 15px 10px;
+  background: #b92400;
+  border-radius: 5px;
+}
+
+/* line 75, /Users/loriburleson/Desktop/TIY16/Week6/phdrinks/app/assets/stylesheets/partials/_general.scss */
+h2 {
+  color: white;
+}
+
+/* line 79, /Users/loriburleson/Desktop/TIY16/Week6/phdrinks/app/assets/stylesheets/partials/_general.scss */
+input {
+  border: none;
+  outline: none;
+}
+
+/* line 84, /Users/loriburleson/Desktop/TIY16/Week6/phdrinks/app/assets/stylesheets/partials/_general.scss */
+.loginBtn {
+  transition: all 150ms linear;
+  text-align: center;
+  width: 100%;
+  outline: none;
+  margin-top: 4px;
+  font-size: 15px;
+  font-family: raleway;
+  color: white;
+  background: #b92400;
+  border-radius: 5px;
+}
+/* line 96, /Users/loriburleson/Desktop/TIY16/Week6/phdrinks/app/assets/stylesheets/partials/_general.scss */
+.loginBtn:hover {
+  background: #861a00;
+}
+
+/* line 101, /Users/loriburleson/Desktop/TIY16/Week6/phdrinks/app/assets/stylesheets/partials/_general.scss */
+.field {
+  margin: 10px;
+  padding: 5px;
+}
+
+/* line 106, /Users/loriburleson/Desktop/TIY16/Week6/phdrinks/app/assets/stylesheets/partials/_general.scss */
+a {
+  color: white;
+  text-decoration: none;
+}
+/* line 110, /Users/loriburleson/Desktop/TIY16/Week6/phdrinks/app/assets/stylesheets/partials/_general.scss */
+a:hover {
+  color: #bfbfbf;
+}
+
+/* line 115, /Users/loriburleson/Desktop/TIY16/Week6/phdrinks/app/assets/stylesheets/partials/_general.scss */
+.checkbox {
+  margin-top: 15px;
+}
+
+/* line 119, /Users/loriburleson/Desktop/TIY16/Week6/phdrinks/app/assets/stylesheets/partials/_general.scss */
+.actions {
+  width: 100%;
+  height: 23px;
+}
+
+/* line 125, /Users/loriburleson/Desktop/TIY16/Week6/phdrinks/app/assets/stylesheets/partials/_general.scss */
+input[type=email] {
+  padding: 5px;
+  margin: 5px;
+  font-size: 1em;
+  width: 80%;
+}
+
+/* line 132, /Users/loriburleson/Desktop/TIY16/Week6/phdrinks/app/assets/stylesheets/partials/_general.scss */
+input[type=password] {
+  padding: 5px;
+  margin: 5px;
+  font-size: 1em;
+  width: 72%;
+}
+
+/* line 139, /Users/loriburleson/Desktop/TIY16/Week6/phdrinks/app/assets/stylesheets/partials/_general.scss */
+.formElem {
+  width: 100%;
+  outline: none;
+  border-bottom: 2px solid black;
+  width: 93%;
+}
+/* line 145, /Users/loriburleson/Desktop/TIY16/Week6/phdrinks/app/assets/stylesheets/partials/_general.scss */
+.formElem label {
+  margin-right: 10px;
+}
+
+/* line 153, /Users/loriburleson/Desktop/TIY16/Week6/phdrinks/app/assets/stylesheets/partials/_general.scss */
+.headerGrey {
+  background: linear-gradient(to top, rgba(185, 36, 0, 0), #b92400);
+  width: 100%;
+  position: absolute;
+  top: 0;
+  display: flex;
+}
+/* line 161, /Users/loriburleson/Desktop/TIY16/Week6/phdrinks/app/assets/stylesheets/partials/_general.scss */
+.headerGrey .logoCup {
+  content: url("glassCup.svg");
+  height: 50px;
+  margin: 7.5px 5px 7.5px 1%;
+}
+/* line 167, /Users/loriburleson/Desktop/TIY16/Week6/phdrinks/app/assets/stylesheets/partials/_general.scss */
+.headerGrey .logoText {
+  color: white;
+  font-family: 'Arizonia';
+  font-weight: 100;
+  font-size: 40px;
+  margin: 0 0 0 1%;
+  align-self: center;
+  letter-spacing: 1px;
+}
+
+/* line 178, /Users/loriburleson/Desktop/TIY16/Week6/phdrinks/app/assets/stylesheets/partials/_general.scss */
+.gameWoodenBar {
+  content: url(/assets/woodenBar-cce4c5ac6336547d9cfa9094221b0c3561207218a7975edcf07bc705247ab4d0.jpg);
+  width: 100%;
+  bottom: 0;
+  height: 80px;
+  position: absolute;
+  filter: brightness(50%);
+}
+
+/* line 187, /Users/loriburleson/Desktop/TIY16/Week6/phdrinks/app/assets/stylesheets/partials/_general.scss */
+.gameCup {
+  content: url(/assets/glassCup-489d6572fc38ece2d0a280a83cd43a9ce497ed65a492374c1ec3dc1047a64c5c.svg);
+  height: 230px;
+  position: absolute;
+  bottom: 10px;
+  right: 50px;
+  z-index: 1;
+  filter: drop-shadow(8px 12px 4px black);
+  overflow: hidden;
+}
+
+/* line 198, /Users/loriburleson/Desktop/TIY16/Week6/phdrinks/app/assets/stylesheets/partials/_general.scss */
+.gameDrinkName {
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  top: 68%;
+  width: 52%;
+  font-family: 'Lato';
+  font-size: 50px;
+  color: white;
+}
+
+/* line 209, /Users/loriburleson/Desktop/TIY16/Week6/phdrinks/app/assets/stylesheets/partials/_general.scss */
+.inactive {
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+}
+
+/* line 214, /Users/loriburleson/Desktop/TIY16/Week6/phdrinks/app/assets/stylesheets/partials/_general.scss */
+.gameIngredients {
+  margin-top: 10%;
+}
+
+/* line 218, /Users/loriburleson/Desktop/TIY16/Week6/phdrinks/app/assets/stylesheets/partials/_general.scss */
+button {
+  width: 100px;
+  height: 50px;
+  background: #062f4f;
+  color: white;
+  border: none;
+  outline: none;
+}
+
+/* line 227, /Users/loriburleson/Desktop/TIY16/Week6/phdrinks/app/assets/stylesheets/partials/_general.scss */
+button:hover {
+  color: black;
+  background: #b92400;
+}
+
+/* line 232, /Users/loriburleson/Desktop/TIY16/Week6/phdrinks/app/assets/stylesheets/partials/_general.scss */
+.gameBanner {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 20%;
+  width: 50vw;
+  height: 35vh;
+  background: #b92400;
+  display: none;
+  border-radius: 5px;
+}
+/* line 241, /Users/loriburleson/Desktop/TIY16/Week6/phdrinks/app/assets/stylesheets/partials/_general.scss */
+.gameBanner p {
+  text-align: center;
+  color: white;
+  font-family: arizonia;
+  font-size: 55px;
+  line-height: 1;
+}
+/* line 249, /Users/loriburleson/Desktop/TIY16/Week6/phdrinks/app/assets/stylesheets/partials/_general.scss */
+.gameBanner span {
+  font-family: raleway;
+  font-size: 20px;
+  line-height: 1;
+}
+
+/* line 256, /Users/loriburleson/Desktop/TIY16/Week6/phdrinks/app/assets/stylesheets/partials/_general.scss */
+.rollIn {
+  animation: grow 0.5s ease;
+}
+
+@keyframes grow {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.01);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+/* line 273, /Users/loriburleson/Desktop/TIY16/Week6/phdrinks/app/assets/stylesheets/partials/_general.scss */
+.cupFill {
+  position: absolute;
+  right: 72px;
+  top: 84vh;
+  height: 90px;
+  width: 150px;
+  background: rgba(165, 42, 42, 0.5);
+  transition: all 1s ease;
+}
+@import url("https://fonts.googleapis.com/css?family=Lato|Raleway");
+@import url("https://fonts.googleapis.com/css?family=Arizonia");
+/* line 5, /Users/loriburleson/Desktop/TIY16/Week6/phdrinks/app/assets/stylesheets/partials/_general.scss */
+.lato {
+  font-family: 'Lato', sans-serif;
+}
+
+/* line 9, /Users/loriburleson/Desktop/TIY16/Week6/phdrinks/app/assets/stylesheets/partials/_general.scss */
+.raleway {
+  font-family: 'Raleway', sans-serif;
+}
+
+/* line 13, /Users/loriburleson/Desktop/TIY16/Week6/phdrinks/app/assets/stylesheets/partials/_general.scss */
+.arizonia {
+  font-family: 'Arizonia', serif;
+}
+
+/* line 26, /Users/loriburleson/Desktop/TIY16/Week6/phdrinks/app/assets/stylesheets/partials/_general.scss */
+html {
+  background: url(/assets/dark_wood-02d5c1f6107be798ddb133245d35295ad193287661006783f445948b4fe20b53.png);
+  height: 100%;
+}
+
+/* line 31, /Users/loriburleson/Desktop/TIY16/Week6/phdrinks/app/assets/stylesheets/partials/_general.scss */
+body {
+  background-size: cover;
+  height: 100%;
+  margin: 0;
+  font-family: raleway;
+}
+
+/* line 39, /Users/loriburleson/Desktop/TIY16/Week6/phdrinks/app/assets/stylesheets/partials/_general.scss */
+em,
+h3,
+i,
+label,
+li,
+p,
+ul {
+  color: white;
+}
+
+/* line 49, /Users/loriburleson/Desktop/TIY16/Week6/phdrinks/app/assets/stylesheets/partials/_general.scss */
+.page-wrap {
+  width: 70%;
+  margin: 5% 15%;
+}
+
+/* line 54, /Users/loriburleson/Desktop/TIY16/Week6/phdrinks/app/assets/stylesheets/partials/_general.scss */
+input[type=submit] {
+  color: white;
+  margin: 5px 0;
+  padding: 5px 10px;
+  font-size: 1em;
+  border-radius: 5px;
+  background-color: #B92400;
+}
+
+/* line 63, /Users/loriburleson/Desktop/TIY16/Week6/phdrinks/app/assets/stylesheets/partials/_general.scss */
+.container {
+  width: 35%;
+  top: 25%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* line 69, /Users/loriburleson/Desktop/TIY16/Week6/phdrinks/app/assets/stylesheets/partials/_general.scss */
+.new_user {
+  padding: 15px 10px;
+  background: #b92400;
+  border-radius: 5px;
+}
+
+/* line 75, /Users/loriburleson/Desktop/TIY16/Week6/phdrinks/app/assets/stylesheets/partials/_general.scss */
+h2 {
+  color: white;
+}
+
+/* line 79, /Users/loriburleson/Desktop/TIY16/Week6/phdrinks/app/assets/stylesheets/partials/_general.scss */
+input {
+  border: none;
+  outline: none;
+}
+
+/* line 84, /Users/loriburleson/Desktop/TIY16/Week6/phdrinks/app/assets/stylesheets/partials/_general.scss */
+.loginBtn {
+  transition: all 150ms linear;
+  text-align: center;
+  width: 100%;
+  outline: none;
+  margin-top: 4px;
+  font-size: 15px;
+  font-family: raleway;
+  color: white;
+  background: #b92400;
+  border-radius: 5px;
+}
+/* line 96, /Users/loriburleson/Desktop/TIY16/Week6/phdrinks/app/assets/stylesheets/partials/_general.scss */
+.loginBtn:hover {
+  background: #861a00;
+}
+
+/* line 101, /Users/loriburleson/Desktop/TIY16/Week6/phdrinks/app/assets/stylesheets/partials/_general.scss */
+.field {
+  margin: 10px;
+  padding: 5px;
+}
+
+/* line 106, /Users/loriburleson/Desktop/TIY16/Week6/phdrinks/app/assets/stylesheets/partials/_general.scss */
+a {
+  color: white;
+  text-decoration: none;
+}
+/* line 110, /Users/loriburleson/Desktop/TIY16/Week6/phdrinks/app/assets/stylesheets/partials/_general.scss */
+a:hover {
+  color: #bfbfbf;
+}
+
+/* line 115, /Users/loriburleson/Desktop/TIY16/Week6/phdrinks/app/assets/stylesheets/partials/_general.scss */
+.checkbox {
+  margin-top: 15px;
+}
+
+/* line 119, /Users/loriburleson/Desktop/TIY16/Week6/phdrinks/app/assets/stylesheets/partials/_general.scss */
+.actions {
+  width: 100%;
+  height: 23px;
+}
+
+/* line 125, /Users/loriburleson/Desktop/TIY16/Week6/phdrinks/app/assets/stylesheets/partials/_general.scss */
+input[type=email] {
+  padding: 5px;
+  margin: 5px;
+  font-size: 1em;
+  width: 80%;
+}
+
+/* line 132, /Users/loriburleson/Desktop/TIY16/Week6/phdrinks/app/assets/stylesheets/partials/_general.scss */
+input[type=password] {
+  padding: 5px;
+  margin: 5px;
+  font-size: 1em;
+  width: 72%;
+}
+
+/* line 139, /Users/loriburleson/Desktop/TIY16/Week6/phdrinks/app/assets/stylesheets/partials/_general.scss */
+.formElem {
+  width: 100%;
+  outline: none;
+  border-bottom: 2px solid black;
+  width: 93%;
+}
+/* line 145, /Users/loriburleson/Desktop/TIY16/Week6/phdrinks/app/assets/stylesheets/partials/_general.scss */
+.formElem label {
+  margin-right: 10px;
+}
+
+/* line 153, /Users/loriburleson/Desktop/TIY16/Week6/phdrinks/app/assets/stylesheets/partials/_general.scss */
+.headerGrey {
+  background: linear-gradient(to top, rgba(185, 36, 0, 0), #b92400);
+  width: 100%;
+  position: absolute;
+  top: 0;
+  display: flex;
+}
+/* line 161, /Users/loriburleson/Desktop/TIY16/Week6/phdrinks/app/assets/stylesheets/partials/_general.scss */
+.headerGrey .logoCup {
+  content: url("glassCup.svg");
+  height: 50px;
+  margin: 7.5px 5px 7.5px 1%;
+}
+/* line 167, /Users/loriburleson/Desktop/TIY16/Week6/phdrinks/app/assets/stylesheets/partials/_general.scss */
+.headerGrey .logoText {
+  color: white;
+  font-family: 'Arizonia';
+  font-weight: 100;
+  font-size: 40px;
+  margin: 0 0 0 1%;
+  align-self: center;
+  letter-spacing: 1px;
+}
+
+/* line 178, /Users/loriburleson/Desktop/TIY16/Week6/phdrinks/app/assets/stylesheets/partials/_general.scss */
+.gameWoodenBar {
+  content: url(/assets/woodenBar-cce4c5ac6336547d9cfa9094221b0c3561207218a7975edcf07bc705247ab4d0.jpg);
+  width: 100%;
+  bottom: 0;
+  height: 80px;
+  position: absolute;
+  filter: brightness(50%);
+}
+
+/* line 187, /Users/loriburleson/Desktop/TIY16/Week6/phdrinks/app/assets/stylesheets/partials/_general.scss */
+.gameCup {
+  content: url(/assets/glassCup-489d6572fc38ece2d0a280a83cd43a9ce497ed65a492374c1ec3dc1047a64c5c.svg);
+  height: 230px;
+  position: absolute;
+  bottom: 10px;
+  right: 50px;
+  z-index: 1;
+  filter: drop-shadow(8px 12px 4px black);
+  overflow: hidden;
+}
+
+/* line 198, /Users/loriburleson/Desktop/TIY16/Week6/phdrinks/app/assets/stylesheets/partials/_general.scss */
+.gameDrinkName {
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  top: 68%;
+  width: 52%;
+  font-family: 'Lato';
+  font-size: 50px;
+  color: white;
+}
+
+/* line 209, /Users/loriburleson/Desktop/TIY16/Week6/phdrinks/app/assets/stylesheets/partials/_general.scss */
+.inactive {
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+}
+
+/* line 214, /Users/loriburleson/Desktop/TIY16/Week6/phdrinks/app/assets/stylesheets/partials/_general.scss */
+.gameIngredients {
+  margin-top: 10%;
+}
+
+/* line 218, /Users/loriburleson/Desktop/TIY16/Week6/phdrinks/app/assets/stylesheets/partials/_general.scss */
+button {
+  width: 100px;
+  height: 50px;
+  background: #062f4f;
+  color: white;
+  border: none;
+  outline: none;
+}
+
+/* line 227, /Users/loriburleson/Desktop/TIY16/Week6/phdrinks/app/assets/stylesheets/partials/_general.scss */
+button:hover {
+  color: black;
+  background: #b92400;
+}
+
+/* line 232, /Users/loriburleson/Desktop/TIY16/Week6/phdrinks/app/assets/stylesheets/partials/_general.scss */
+.gameBanner {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 20%;
+  width: 50vw;
+  height: 35vh;
+  background: #b92400;
+  display: none;
+  border-radius: 5px;
+}
+/* line 241, /Users/loriburleson/Desktop/TIY16/Week6/phdrinks/app/assets/stylesheets/partials/_general.scss */
+.gameBanner p {
+  text-align: center;
+  color: white;
+  font-family: arizonia;
+  font-size: 55px;
+  line-height: 1;
+}
+/* line 249, /Users/loriburleson/Desktop/TIY16/Week6/phdrinks/app/assets/stylesheets/partials/_general.scss */
+.gameBanner span {
+  font-family: raleway;
+  font-size: 20px;
+  line-height: 1;
+}
+
+/* line 256, /Users/loriburleson/Desktop/TIY16/Week6/phdrinks/app/assets/stylesheets/partials/_general.scss */
+.rollIn {
+  animation: grow 0.5s ease;
+}
+
+@keyframes grow {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.01);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+/* line 273, /Users/loriburleson/Desktop/TIY16/Week6/phdrinks/app/assets/stylesheets/partials/_general.scss */
+.cupFill {
+  position: absolute;
+  right: 72px;
+  top: 84vh;
+  height: 90px;
+  width: 150px;
+  background: rgba(165, 42, 42, 0.5);
+  transition: all 1s ease;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+
+ */

@@ -2,6 +2,9 @@
 
 Sam, Samantha, and Lori
 
+##Can you mix these three-ingredient cocktails?
+Enjoy this matching game that randomly selects five of 20 drinks to quiz you on your cocktail-making skills. Correctly mixed drinks are scored and added to your user profile and you can compare your lifetime winnings against other players. 
+
 Sam + Samantha: Front End Engineers
 * Javascript
 * JQuery
