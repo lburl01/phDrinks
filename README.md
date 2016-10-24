@@ -1,24 +1,31 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Sam, Samantha, and Lori
 
-Things you may want to cover:
+Sam + Samantha: Front End Engineers
+* Javascript
+* JQuery
+* HTML/CSS
 
-* Ruby version
+Lori: Back End Programmer
+* Ruby
+* Rails deployment
+* Master of the Database
 
-* System dependencies
-
-* Configuration
+* To run
+Download the repository. Load the gems to your computer with: 
+```bash
+$ bundle install
+```
 
 * Database creation
+To load the database and seed data to your computer, run: 
+```bash
+$ rails db:create db:migrate db:seed
+```
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* Run program locally
+Start up the rails server with the command below and visit localhost:3000 to visit our app. 
+```bash
+$ bin/rails server
+```
